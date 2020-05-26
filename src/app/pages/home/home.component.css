@@ -9,3 +9,8 @@
     padding: 1% 0;
 }
 
+.col-md-2 {
+    margin: 0 0;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+}
