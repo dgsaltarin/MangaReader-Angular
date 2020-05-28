@@ -13,6 +13,9 @@ const routes: Routes = [
     path: 'home', component: HomeComponent
   },
   {
+    path: 'manga', component: MangaComponent
+  },
+  {
     path: '**', pathMatch: 'full', redirectTo: 'home'
   }
 ];

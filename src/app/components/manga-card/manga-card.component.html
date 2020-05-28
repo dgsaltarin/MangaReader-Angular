@@ -1,6 +1,8 @@
 <div class="card">
-    <img class="card-image" src="https://thumb.mghubcdn.com/mn/kuroshitsuji.jpg" class="card-img-top" alt="https://thumb.mghubcdn.com/mn/kuroshitsuji.jpg">
-    <div class="card-body">
-      <h6 class="card-title">Kuroshitsuji</h6>
-    </div>
+  <a routerLink="/random">
+    <img class="card-image" [src]="manga.cover" class="card-img-top" [alt]="manga.name">
+  </a>
+  <div class="card-body">
+    <h6 class="card-title">{{manga.name}}</h6>
   </div>
+</div>

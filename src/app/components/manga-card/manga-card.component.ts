@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Manga } from 'src/app/models/manga.model';
 
 @Component({
   selector: 'app-manga-card',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class MangaCardComponent implements OnInit {
 
   constructor() { }
+
+  @Input() manga: Manga;
 
   ngOnInit(): void {
   }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Manga } from 'src/app/models/manga.model';
+import { HttpService } from '../../services/http.service';
 
 @Component({
   selector: 'app-home',
@@ -7,11 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  popularManga = [1, 2, 3, 4, 5, 6];
+  mangas: Manga[];
 
-  constructor() { }
+  constructor(private mangaService: HttpService) { }
 
   ngOnInit(): void {
+    this.mangaService.getAllMangas().subscribe(mangas => {
+      this.mangas = mangas;
+    });
   }
 
 }

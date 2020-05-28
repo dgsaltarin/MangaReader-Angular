@@ -10,6 +10,9 @@ import { MangaCardComponent } from './components/manga-card/manga-card.component
 import { MangaDescriptionComponent } from './components/manga-description/manga-description.component';
 import { PageComponent } from './components/page/page.component';
 import { ChapterPageComponent } from './pages/chapter-page/chapter-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DirectoryComponent } from './components/directory/directory.component';
+import { PageContainerComponent } from './components/page-container/page-container.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import { ChapterPageComponent } from './pages/chapter-page/chapter-page.componen
     MangaCardComponent,
     MangaDescriptionComponent,
     PageComponent,
-    ChapterPageComponent
+    ChapterPageComponent,
+    DirectoryComponent,
+    PageContainerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
