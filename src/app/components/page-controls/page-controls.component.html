@@ -1,0 +1,8 @@
+<div class="control-container">
+    <a class="firts-page" *ngIf="actualPage !== 1">primera pagina</a>
+    <a class="previus-page" *ngIf="actualPage !== 1">anterior</a>
+    <a class="page-number"> {{actualPage}} de 20</a>
+    <a class="next-page" [routerLink]="[nextPageRoute]">siguiente</a>
+    <a class="last-page">ultima</a>
+</div>
+

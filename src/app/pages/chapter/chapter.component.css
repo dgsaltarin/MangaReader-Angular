@@ -1,0 +1,24 @@
+.body {
+    background-color: #0d0d0d;
+}
+
+#manga-description {
+    border-radius: 1%;
+    height: 40%;
+    background-color:#1f1f1f;
+    padding: 2% 2%;
+    margin: 2% 2%;
+}
+
+#manga-description-card {
+    padding: 2% 0;
+}
+
+#chaper-pages {
+    margin: 2% 2%;
+    background-color:#1f1f1f;
+}
+
+.col{
+    padding: 1% 0;
+}

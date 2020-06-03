@@ -1,0 +1,23 @@
+.container {
+    background-color: #1f1f1f;
+    padding-top: 1%;
+    margin-top: 1%;
+    color: white;
+    border-radius: 10px;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:600px){
+    .col-md-3 col-lg-3 col-9 {
+        position: relative;
+        justify-content: center;
+    }
+    .row {
+        position: relative;
+        justify-content: center;
+    }
+}

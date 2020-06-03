@@ -1,0 +1,35 @@
+.card {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    margin: 0 0;
+}
+
+.card-body {
+    padding: 0.2% 0.2%;
+}
+
+@media only screen and (min-width:992px){
+    img {
+        max-height: 349px;
+        min-width: 245px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    img {
+        max-height: 250px;
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    img {
+        max-height: 349px;
+        max-width: 245px;
+    }
+}

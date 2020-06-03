@@ -1,0 +1,11 @@
+a {
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+
+.control-container {
+    align-items: center;
+    text-align: center;
+    padding: 1% 0;
+}
