@@ -1,6 +1,6 @@
 <!--Section-->
 <section id="manga-description">
-<app-manga-description id="manga-description-card">
+<app-manga-description [manga]="manga" id="manga-description-card">
 
 </app-manga-description>
 </section>
@@ -8,12 +8,6 @@
 
 <!--Section-->
 <section id="manga-chapters">
-    <div class="container">
-        <div class="row row-cols-md-4">
-            <div class="col" *ngFor="let chapter of chapters">
-                <img src="https://thumb.mghubcdn.com/mn/kuroshitsuji.jpg">
-            </div>
-        </div>
-    </div>
+    <app-directory [previews]="previews" [title]="directoryTitle" [route]="chapterRoute" [pageNumber]="1" ></app-directory>
 </section>
 <!--/Section-->

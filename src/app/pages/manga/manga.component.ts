@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params} from '@angular/router';
+import { Manga } from 'src/app/models/manga.model';
+import { Preview } from 'src/app/models/preview.model';
+import { HttpService } from 'src/app/services/http.service';
 
 @Component({
   selector: 'app-manga',
@@ -7,11 +11,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MangaComponent implements OnInit {
 
-  chapters = [1, 2, 3, 4, 5];
+  manga: Manga;
+  previews: Preview[];
+  chapterRoute: string;
+  totalPages: number;
+  directoryTitle = 'CAPITULOS';
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private http: HttpService) { }
 
   ngOnInit(): void {
+    this.route.params.subscribe((params: Params) => {
+      const id = params.id;
+
+      this.http.getMangaById(id).subscribe(manga => {
+        this.manga = manga;
+      });
+
+      this.http.getAllChaptersPreview(id).subscribe(previews => {
+        this.previews = previews;
+        this.totalPages = previews.length;
+      });
+
+      this.chapterRoute = `/manga/${id}/`;
+    });
+
   }
 
 }

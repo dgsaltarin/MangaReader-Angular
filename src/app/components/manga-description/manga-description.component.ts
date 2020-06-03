@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Manga } from 'src/app/models/manga.model';
 
 @Component({
@@ -8,9 +8,8 @@ import { Manga } from 'src/app/models/manga.model';
 })
 export class MangaDescriptionComponent implements OnInit {
 
-  manga: Manga;
+  @Input() manga: Manga;
 
-  title = 'Kuroshisuji';
   constructor() { }
 
   ngOnInit(): void {
