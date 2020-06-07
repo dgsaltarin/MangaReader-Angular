@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Manga } from '../../../core/models/manga.model';
-import { HttpService } from '../../../core/services/http.service';
-import { Preview } from '../../../core/models/preview.model';
+import { Manga } from '../../../../core/models/manga.model';
+import { HttpService } from '../../../../core/services/http.service';
+import { Preview } from '../../../../core/models/preview.model';
 
 @Component({
   selector: 'app-home',
