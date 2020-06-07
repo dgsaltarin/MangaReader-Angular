@@ -5,11 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+    path: '', loadChildren: () => import('./website/website.module').then(m => m.WebsiteModule)
   },
-  {
-    path: '**', pathMatch: 'full', redirectTo: 'home'
-  }
 ];
 
 @NgModule({

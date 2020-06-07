@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
+import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import { MangaComponent } from './pages/manga/manga.component';
 import { MangaDescriptionComponent } from './components/manga-description/manga-description.component';
 import { ChapterPageComponent } from './pages/chapter-page/chapter-page.component';
