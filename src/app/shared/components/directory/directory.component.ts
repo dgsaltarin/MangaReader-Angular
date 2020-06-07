@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { Preview } from 'src/app/models/preview.model';
+import { Preview } from '../../models/preview.model';
 
 @Component({
   selector: 'app-directory',
@@ -8,7 +8,7 @@ import { Preview } from 'src/app/models/preview.model';
 })
 export class DirectoryComponent implements OnInit, OnChanges {
 
-  @Input() previews: Preview[]; // full array of previews
+  @Input() previews: Preview[] = []; // full array of previews
   @Input() title: string; // title for the directory
   @Input() route: string; // rouute for the previewed component
   numberOfPages: number; // number of pages of the directory
@@ -18,15 +18,13 @@ export class DirectoryComponent implements OnInit, OnChanges {
   constructor() { }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.definePages(this.previews.length);
-      console.log(this.numberOfPages);
-      this.definePreviewsToShow(1, this.previews);
-      console.log(this.previewsToShow);
-    }, 500);
   }
 
   ngOnChanges(changes: SimpleChanges): void {
+    this.definePages(this.previews.length);
+    console.log(this.numberOfPages);
+    this.definePreviewsToShow(1, this.previews);
+    console.log(this.previewsToShow);
   }
 
   // calculate the number of pages directory will contain
@@ -57,10 +55,9 @@ export class DirectoryComponent implements OnInit, OnChanges {
     }
   }
 
+  // receive a new page number from the directory pagination system and define the previews to show
   receiveNewPageNumber($event: number){
     this.definePreviewsToShow($event, this.previews);
-    console.log($event);
-    console.log(this.previewsToShow);
   }
 
 }

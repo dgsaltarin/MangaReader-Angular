@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  BASE_API_URL: 'http://localhost:8080/v1'
+  BASE_API_URL: 'https://dgmanga.herokuapp.com/v1'
 };
 
 /*

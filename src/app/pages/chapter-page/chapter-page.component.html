@@ -1,7 +1,11 @@
 <div class="page-container">
-    <app-page-controls [actualPage]="actualPage" [nextPageRoute]="nextPageRoute"></app-page-controls>
+    <app-page-controls [actualPage]="actualPage" [nextPageRoute]="nextPageRoute" [lastPageRoute]="lastPageRoute"
+    [totalPages]="totalPages" [previusPageRoute]="previusPageRoute" [firstPageRoute]="firstPageRoute">
+    </app-page-controls>
     <app-page-container [page]="page" ></app-page-container>
-    <app-page-controls [actualPage]="actualPage" [nextPageRoute]="nextPageRoute"></app-page-controls>
+    <app-page-controls [actualPage]="actualPage" [nextPageRoute]="nextPageRoute" [lastPageRoute]="lastPageRoute"
+    [totalPages]="totalPages" [previusPageRoute]="previusPageRoute" [firstPageRoute]="firstPageRoute">
+    </app-page-controls>
     <a>De vuelta al capitulo</a>
 </div>
 

@@ -9,3 +9,7 @@ a {
     text-align: center;
     padding: 1% 0;
 }
+
+.next-page, .last-page, .previus-page, .first-page {
+    font-size: 30px;
+}

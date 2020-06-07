@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { Manga } from '../models/manga.model';
-import { Preview } from '../models/preview.model';
-import { Page } from '../models/page.model';
-import { Chapter } from '../models/chapter.model';
+import { Manga } from '../shared/models/manga.model';
+import { Preview } from '../shared/models/preview.model';
+import { Page } from '../shared/models/page.model';
+import { Chapter } from '../shared/models/chapter.model';
 
 @Injectable({
   providedIn: 'root'

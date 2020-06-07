@@ -1,6 +1,7 @@
 .gallery-bottom {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .gallery-bottom .pagination {
@@ -9,7 +10,7 @@
   
   .pagination > li > button, .pagination > li > span {
     background-color: #ccc;
-    padding: 3px 9px;
+    padding: 2px 9px;
     color: #fff;
     border: 0px;
   }
@@ -17,7 +18,7 @@
   .pagination > li > a {
     background-color: #ccc;
     margin-top: 10px;
-    padding: 3px 9px;
+    padding: 4px 9px;
     color: #fff;
     border: 0px;
   }
