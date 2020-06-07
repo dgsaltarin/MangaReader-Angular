@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Preview } from '../../shared/models/preview.model';
 import { Manga } from '../../shared/models/manga.model';
 import { ActivatedRoute, Params} from '@angular/router';
-import { HttpService } from 'src/app/services/http.service';
+import { HttpService } from 'src/app/core/services/http.service';
 import { Chapter } from '../../shared/models/chapter.model';
-import { SharedService } from 'src/app/services/shared.service';
+import { SharedService } from 'src/app/core/services/shared.service';
 
 @Component({
   selector: 'app-chapter',

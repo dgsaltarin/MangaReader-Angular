@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Manga } from '../../../shared/models/manga.model';
-import { HttpService } from '../../../services/http.service';
+import { HttpService } from '../../../core/services/http.service';
 import { Preview } from '../../../shared/models/preview.model';
 
 @Component({

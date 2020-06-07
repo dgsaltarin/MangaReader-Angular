@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params} from '@angular/router';
-import { HttpService } from 'src/app/services/http.service';
+import { HttpService } from 'src/app/core/services/http.service';
 import { Page } from '../../shared/models/page.model';
-import { SharedService } from 'src/app/services/shared.service';
+import { SharedService } from 'src/app/core/services/shared.service';
 
 @Component({
   selector: 'app-chapter-page',
