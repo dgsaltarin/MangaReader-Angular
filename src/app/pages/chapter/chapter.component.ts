@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Preview } from '../../shared/models/preview.model';
-import { Manga } from '../../shared/models/manga.model';
+import { Preview } from '../../core/models/preview.model';
+import { Manga } from '../../core/models/manga.model';
 import { ActivatedRoute, Params} from '@angular/router';
 import { HttpService } from 'src/app/core/services/http.service';
-import { Chapter } from '../../shared/models/chapter.model';
+import { Chapter } from '../../core/models/chapter.model';
 import { SharedService } from 'src/app/core/services/shared.service';
 
 @Component({

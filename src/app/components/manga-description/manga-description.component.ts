@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Manga } from '../../shared/models/manga.model';
+import { Manga } from '../../core/models/manga.model';
 
 @Component({
   selector: 'app-manga-description',

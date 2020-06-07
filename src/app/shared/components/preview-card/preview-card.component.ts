@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Preview } from '../../models/preview.model';
+import { Preview } from '../../../core/models/preview.model';
 
 @Component({
   selector: 'app-preview-card',

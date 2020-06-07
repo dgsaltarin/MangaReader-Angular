@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params} from '@angular/router';
-import { Manga } from '../../shared/models/manga.model';
-import { Preview } from '../../shared/models/preview.model';
+import { Manga } from '../../core/models/manga.model';
+import { Preview } from '../../core/models/preview.model';
 import { HttpService } from 'src/app/core/services/http.service';
 
 @Component({
