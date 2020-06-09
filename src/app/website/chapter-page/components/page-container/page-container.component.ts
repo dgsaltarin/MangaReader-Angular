@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Page } from '../../core/models/page.model';
+import { Page } from '../../../../core/models/page.model';
 
 @Component({
   selector: 'app-page-container',

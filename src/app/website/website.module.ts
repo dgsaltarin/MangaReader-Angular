@@ -4,11 +4,14 @@ import { WebsiteRoutingModule } from './website-routing.module';
 
 
 
+
 @NgModule({
-  declarations: [],
+  declarations: [ ],
   imports: [
     CommonModule,
     WebsiteRoutingModule
+  ],
+  exports: [
   ]
 })
 export class WebsiteModule { }

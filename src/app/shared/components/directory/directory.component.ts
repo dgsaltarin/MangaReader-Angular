@@ -22,9 +22,7 @@ export class DirectoryComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     this.definePages(this.previews.length);
-    console.log(this.numberOfPages);
     this.definePreviewsToShow(1, this.previews);
-    console.log(this.previewsToShow);
   }
 
   // calculate the number of pages directory will contain

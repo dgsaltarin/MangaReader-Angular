@@ -13,6 +13,5 @@ export class SharedService {
 
   newTotalPagesNUmber(totalPages: number){
     this.totalPagesNumber.next(totalPages);
-    console.log(totalPages);
   }
 }

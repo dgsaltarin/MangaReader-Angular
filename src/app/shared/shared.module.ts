@@ -4,6 +4,8 @@ import { DirectoryComponent } from './components/directory/directory.component';
 import { PreviewCardComponent } from './components/preview-card/preview-card.component';
 import { PaginationSystemComponent, TimesPipe } from './components/pagination-system/pagination-system.component';
 import { SharedRoutingModule } from './shared-routing.module';
+import { MangaDescriptionComponent } from './components/manga-description/manga-description.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 
 
@@ -12,14 +14,18 @@ import { SharedRoutingModule } from './shared-routing.module';
     DirectoryComponent,
     PreviewCardComponent,
     PaginationSystemComponent,
+    MangaDescriptionComponent,
+    NavBarComponent,
     TimesPipe
   ],
   imports: [
     CommonModule,
-    SharedRoutingModule
+    SharedRoutingModule,
   ],
   exports: [
-    DirectoryComponent
+    DirectoryComponent,
+    MangaDescriptionComponent,
+    NavBarComponent
   ]
 })
 
