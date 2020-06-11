@@ -21,8 +21,10 @@ export class DirectoryComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.definePages(this.previews.length);
-    this.definePreviewsToShow(1, this.previews);
+    if (this.previews != null) {
+      this.definePages(this.previews.length);
+      this.definePreviewsToShow(1, this.previews);
+    }
   }
 
   // calculate the number of pages directory will contain
@@ -54,7 +56,7 @@ export class DirectoryComponent implements OnInit, OnChanges {
   }
 
   // receive a new page number from the directory pagination system and define the previews to show
-  receiveNewPageNumber($event: number){
+  receiveNewPageNumber($event: number) {
     this.definePreviewsToShow($event, this.previews);
   }
 
