@@ -8,10 +8,6 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
   },
   {
-    path: 'random',
-    loadChildren: () => import('./manga/manga.module').then(m => m.MangaModule)
-  },
-  {
     path: 'manga/:id',
     loadChildren: () => import('./manga/manga.module').then(m => m.MangaModule)
   },

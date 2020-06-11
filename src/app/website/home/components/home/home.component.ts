@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.mangaService.getAllMangasPreview().subscribe(preview => {
       this.previews = preview;
+      console.log(this.previews);
     });
 
   }

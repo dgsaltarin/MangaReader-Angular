@@ -3,7 +3,7 @@ import { Chapter } from './chapter.model';
 import { Tag } from './tag.model';
 
 export interface Manga {
-    id: number;
+    idManga: number;
     name: string;
     description: string;
     chapters: number;

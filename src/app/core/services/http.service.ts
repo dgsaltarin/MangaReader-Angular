@@ -24,7 +24,7 @@ export class HttpService {
   }
 
   public getRandomManga(){
-    return this.http.get<Manga>(this.baseUrl + '/random');
+    return this.http.get<Manga>(this.baseUrl + '/manga/random');
   }
 
   public getAllMangasPreview(){

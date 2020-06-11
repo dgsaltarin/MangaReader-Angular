@@ -20,7 +20,7 @@
           <a class="nav-link" [routerLink]="['home']">Inicio<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active" routerLinkActive="active">
-          <a class="nav-link" [routerLink]="['random']">Manga Aleatorio</a>
+          <a class="nav-link" (click)="getRandomManga()" [routerLink]="[mangaRoute,idManga]">Manga Aleatorio</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">Tags</a>
