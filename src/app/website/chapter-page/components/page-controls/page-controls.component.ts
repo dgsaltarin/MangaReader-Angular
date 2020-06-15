@@ -17,12 +17,6 @@ export class PageControlsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.actualPage);
-    console.log(this.totalPages);
-    console.log(this.nextPageRoute);
-    console.log(this.lastPageRoute);
-    console.log(this.previusPageRoute);
-    console.log(this.firstPageRoute);
   }
 
 }
