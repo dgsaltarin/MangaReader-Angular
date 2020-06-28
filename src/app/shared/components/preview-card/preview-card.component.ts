@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Pipe, PipeTransform } from '@angular/core';
 import { Preview } from '../../../core/models/preview.model';
 
 @Component({
@@ -17,4 +17,12 @@ export class PreviewCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+}
+
+@Pipe({ name: 'titlePipe'})
+export class TitlePipe implements PipeTransform {
+  transform(value: string): string {
+    const newTitle = value.replace(/-/gi, ' ');
+    return newTitle;
+  }
 }

@@ -1,16 +1,23 @@
 .card {
     color: black;
     margin-bottom: 10px;
+    border-color: #1f1f1f;
+    padding: 1px;
+    background-color: #404040;
 }
 
 .card-title {
     display: flex;
     justify-content: center;
     margin: 0 0;
+    background-color: #404040;
+    color: white;
 }
 
 .card-body {
     padding: 0.2% 0.2%;
+    border-color: #404040;
+    background-color: #404040;
 }
 
 @media only screen and (min-width:992px){

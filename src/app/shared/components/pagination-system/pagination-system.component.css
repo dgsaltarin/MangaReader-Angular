@@ -7,7 +7,7 @@
 .gallery-bottom .pagination {
     margin-top: 0px;
   }
-  
+
   .pagination > li > button, .pagination > li > span {
     background-color: #ccc;
     padding: 2px 9px;
@@ -16,13 +16,13 @@
   }
 
   .pagination > li > a {
-    background-color: #ccc;
-    margin-top: 10px;
-    padding: 4px 9px;
+    background-color: #00c8e0;
+    margin-top: 5px;
+    padding: 2px 9px 5px 9px;
     color: #fff;
     border: 0px;
   }
-  
+
   .pagination > li > button {
     margin-right: 5px;
   }
@@ -30,11 +30,15 @@
   .pagination > li > a {
     margin-right: 5px;
   }
-  
+
   .pagination > .active > button, .pagination > .active > span, .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-    background-color: #32c5d2;
+    background-color: #00c8e0;
   }
 
   .active :hover {
     text-decoration: underline;
+  }
+
+  .pagination-arrow {
+    background-color: #00c8e0;
   }

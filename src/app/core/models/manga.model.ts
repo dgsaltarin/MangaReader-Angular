@@ -10,6 +10,5 @@ export interface Manga {
     status: boolean;
     cover: string;
     artist: Artist;
-    chaptersList: Chapter[];
     tags: Tag[];
 }

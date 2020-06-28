@@ -3,6 +3,6 @@
       <img [src]="preview?.imageUrl" class="card-img-top" [alt]="preview?.imageUrl">
     </a>
     <div class="card-body">
-      <h6 class="card-title">{{preview?.name}}</h6>
+      <h6 class="card-title">{{preview?.name |titlePipe}}</h6>
     </div>
   </div>

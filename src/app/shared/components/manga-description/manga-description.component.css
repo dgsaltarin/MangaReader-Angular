@@ -9,3 +9,9 @@
 .card-text{
     color: white;
 }
+
+.tag-item {
+  color: white;
+  display: inline-flex;
+  margin: 0 1%;
+}
