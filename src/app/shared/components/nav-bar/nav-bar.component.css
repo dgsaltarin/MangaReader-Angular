@@ -8,3 +8,7 @@
   border-color: #00c8e0;
   color: white;
 }
+
+.search-list {
+  display: list-item;
+}

@@ -10,7 +10,10 @@
     </button>
 
     <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+        <input class="form-control mr-sm-2" type="search" [(ngModel)]="searchText" name="searchText" placeholder="Buscar" aria-label="Search">
+        <ul class="search-list" *ngFor="let name of mangaNames | filter: searchText">
+          <li>{{name}}</li>
+        </ul>
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
       </form>
 

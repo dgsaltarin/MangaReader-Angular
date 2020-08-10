@@ -5,7 +5,8 @@ import { PreviewCardComponent, TitlePipe } from './components/preview-card/previ
 import { PaginationSystemComponent, TimesPipe } from './components/pagination-system/pagination-system.component';
 import { SharedRoutingModule } from './shared-routing.module';
 import { MangaDescriptionComponent } from './components/manga-description/manga-description.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { NavBarComponent, FilterPipe } from './components/nav-bar/nav-bar.component';
+import { FormsModule} from '@angular/forms'
 
 
 
@@ -17,11 +18,13 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     MangaDescriptionComponent,
     NavBarComponent,
     TimesPipe,
-    TitlePipe
+    TitlePipe,
+    FilterPipe
   ],
   imports: [
     CommonModule,
     SharedRoutingModule,
+    FormsModule
   ],
   exports: [
     DirectoryComponent,
